@@ -1,68 +1,51 @@
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+@import "tailwindcss";
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+@theme {
+  /* --- 1. 介面底色 (Surface) --- */
+  /* 對應 class: bg-surface, border-surface-200 ... */
+  --color-surface: #1a1b1f;
+  --color-surface-50: #24252a;
+  --color-surface-100: #2d2e33;
+  --color-surface-200: #3f4046;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+  /* --- 2. 主色 (Main) --- */
+  /* 對應 class: bg-main, text-main, hover:bg-main-dark */
+  --color-main: #0088a9;
+  --color-main-light: #33a0ba;
+  --color-main-dark: #007693;
+  /* 支援 alpha 透明度 (例如 bg-main/20) */
+  --color-main-glow: rgba(0, 136, 169, 0.2); 
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
+  /* --- 3. 輔助色 (Secondary) --- */
+  /* 對應 class: text-secondary ... */
+  --color-secondary: #2e7d32;
+  --color-secondary-light: #4caf50;
+  --color-secondary-dark: #1b5e20;
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
+  /* --- 4. 點綴色 (Th/Third) --- */
+  /* 對應 class: text-th ... */
+  --color-th: #8d6e63;
+  --color-th-light: #bcaaa4;
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  /* --- 5. 文字顏色 (Text) ---   
+  */
+  --color-fg: #f3f4f6;       /* 原本的 (主要閱讀白字) */
+  --color-muted: #9ca3af;    /* 原本的 (次要灰字) */
+  --color-dim: #6b7280;      /* 原本的 (微弱深灰) */
+  --color-dark: #2d2d2e;     /* 新增的 (反白或淺底用的深黑字) */
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+
+
+/* 當 body 有 hide-layout 時，強制隱藏 Navbar 和 Footer */
+body.hide-layout header, 
+body.hide-layout footer {
+  transform: translateY(-100%); /* Navbar 向上收 */
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s ease;
+}
+
+body.hide-layout footer {
+  transform: translateY(100%); /* Footer 向下收 */
 }
