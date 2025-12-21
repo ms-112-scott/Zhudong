@@ -1,6 +1,6 @@
 import { useState } from 'react'
 // 1. 引入 React Router 必要元件
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 
 import './App.css'
 
