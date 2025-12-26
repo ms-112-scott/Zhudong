@@ -17,7 +17,7 @@ const Layout = ({ children }) => {
 
       {/* 2. 中間變動內容區塊 */}
       {/* flex-grow 會讓這塊區域自動撐開，把 Footer 推到底部 */}
-      <main className="flex-grow">{children}</main>
+      <main className="grow">{children}</main>
 
       {/* 3. 底部版權宣告 (固定存在) */}
       <Footer />

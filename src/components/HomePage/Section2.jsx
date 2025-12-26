@@ -4,7 +4,7 @@ import {  Network, BookOpen, Users, Database } from 'lucide-react'
 
 export function Section2() {
   return (
-        <section className="bg-main py-24 px-6 md:px-12 bg-surface-50">
+        <section className="bg-main py-24 px-6 md:px-12">
           <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold mb-6 text-fg">

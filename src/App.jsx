@@ -8,11 +8,10 @@ import './App.css'
 import HomePage from './PageLayout/HomePage'
 import Layout from './PageLayout/Layout'
 import KnowledgeGraphPage from './PageLayout/KnowledgeGraphPage'
+import EducationPage from './PageLayout/EducationPage'
+import WorkshopPage from './PageLayout/WorkshopPage'
 import { GraphProvider } from './components/KnowledgeGraph/GraphProvider'
 
-// 頁面元件定義
-const EducationPage = () => <div className="p-20 text-fg min-h-screen bg-surface">這是文化教案頁面</div>
-const WorkshopPage = () => <div className="p-20 text-fg min-h-screen bg-surface">這是共創工作坊頁面</div>
 
 function App() {
   return (
