@@ -5,6 +5,8 @@ import { useGraphData } from '../components/KnowledgeGraph/GraphProvider';
 import { GraphToolbar } from '../components/KnowledgeGraph/GraphToolbar';
 import { GraphLegend } from '../components/KnowledgeGraph/GraphLegend';
 import GraphSearch from '../components/KnowledgeGraph/GraphSearch'; // [新增] 引入搜尋組件
+import FilteredGraphLogger from '../components/KnowledgeGraph/FilteredGraphLogger'; // [新增] 引入過濾後資料的 Logger
+
 
 const KnowledgePage = () => {
   const containerRef = useRef(null);
@@ -115,14 +117,34 @@ const KnowledgePage = () => {
     const [sliderMin, sliderMax] = filterYearRange;
 
     const validNodes = graphData.nodes.filter(node => {
-      if (!node.start_year) return false;
+      // ============================================================
+      // 🟢 修改點 1：處理「無年份」的狀況
+      // ============================================================
+      // 如果沒有 start_year，我們視為「無時間限制 (Timeless)」，永遠顯示
+      if (!node.start_year) return true; 
+
       const nodeStart = parseInt(node.start_year);
+
+      // ============================================================
+      // 🟢 修改點 2：處理「年份格式錯誤」的狀況
+      // ============================================================
+      // 如果有填寫但無法轉成數字 (例如寫了 "未知"), 也視為永久顯示
+      if (isNaN(nodeStart)) return true;
+
+      // ============================================================
+      // 🔵 標準時間檢查 (只有年份有效的才進行篩選)
+      // ============================================================
+      // 處理結束年份：如果有 end_year 就用，沒有則預設等於 start_year (視為單點事件)
+      // *註: 如果你想讓「沒寫結束年份」代表「直到永遠」，可將 : nodeStart 改為 : Infinity
       const nodeEnd = node.end_year ? parseInt(node.end_year) : nodeStart;
-      if (isNaN(nodeStart)) return false;
+
+      // 檢查節點存續時間與滑桿範圍是否有交集
       return (nodeStart <= sliderMax) && (nodeEnd >= sliderMin);
     });
 
     const validNodeIds = new Set(validNodes.map(n => n.id));
+    
+    // Links 的邏輯保持不變：只要兩端的 Node 還活著，Link 就活著
     const validLinks = graphData.links.filter(link => {
       const sourceId = typeof link.source === 'object' ? link.source.id : link.source;
       const targetId = typeof link.target === 'object' ? link.target.id : link.target;
@@ -180,11 +202,21 @@ const KnowledgePage = () => {
   };
 
   const handleZoomToFit = () => graphInstanceRef.current?.zoomToFit();
+  
 
   if (error) return <div className="p-20 text-red-400">Error: {error.message}</div>;
 
   return (
     <div className="fixed top-0 left-0 w-screen h-screen bg-[#1e1e23] overflow-hidden z-0">
+      {/* 你可以隨時修改 targetId 來追蹤不同的人 */}
+      {/* <FilteredGraphLogger 
+         data={graphData} 
+         targetId="張乾榮" 
+      /> */}
+      <FilteredGraphLogger 
+         data={filteredData} 
+         targetId="張乾榮" 
+      />
       
       {isLoading && (
         <div className="absolute inset-0 flex items-center justify-center z-50 bg-[#1e1e23]">

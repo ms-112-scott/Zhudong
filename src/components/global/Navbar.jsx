@@ -8,6 +8,7 @@ const NAV_ITEMS = [
   // { name: '卡片盒', path: '/Cards' },
   { name: '文化教案', path: '/education' },
   { name: '工作坊', path: '/workshop' },
+  { name: '圖片庫', path: '/gallery' },
 ];
 
 const Navbar = () => {

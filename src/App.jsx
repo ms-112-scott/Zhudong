@@ -10,6 +10,7 @@ import Layout from './PageLayout/Layout'
 import KnowledgeGraphPage from './PageLayout/KnowledgeGraphPage'
 import EducationPage from './PageLayout/EducationPage'
 import WorkshopPage from './PageLayout/WorkshopPage'
+import GalleryPage from './PageLayout/GalleryPage'
 import { GraphProvider } from './components/KnowledgeGraph/GraphProvider'
 
 
@@ -28,6 +29,7 @@ function App() {
             <Route path="/KnowledgeGraphPage" element={<KnowledgeGraphPage />} />
             <Route path="/education" element={<EducationPage />} />
             <Route path="/workshop" element={<WorkshopPage />} />
+            <Route path="/gallery" element={<GalleryPage />} />
           </Routes>
         </GraphProvider>
       </Layout>
