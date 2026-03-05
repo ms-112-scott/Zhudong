@@ -1,7 +1,7 @@
 import { useState } from 'react'
 // 修正：統一使用 HashRouter
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
-
+import { DataProvider } from './context/DataContext';
 import './App.css'
 
 // 引入頁面元件
@@ -17,6 +17,7 @@ import { GraphProvider } from './components/KnowledgeGraph/GraphProvider'
 function App() {
   return (
     // 將 BrowserRouter 改為 Router (即上面引入的 HashRouter)
+    <DataProvider>
     <Router>
       <Layout>
         {/* 將 Provider 放在 Layout 內，這樣所有頁面都能共享資料 */}
@@ -34,6 +35,7 @@ function App() {
         </GraphProvider>
       </Layout>
     </Router>
+    </DataProvider>
   )
 }
 
