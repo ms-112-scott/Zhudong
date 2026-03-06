@@ -10,7 +10,7 @@ const DualRangeSlider = ({ min, max, values, onChange, onCommit }) => {
     <div className="relative w-full h-12 flex items-center justify-center pt-4">
       {/* 背景與軌道 (保持不變) */}
       <div className="absolute w-full h-1 bg-white/20 rounded z-0"></div>
-      <div 
+      <div
         className="absolute h-1 bg-[#457B9D] z-10 rounded"
         style={{
           left: `${getPercent(minVal)}%`,
@@ -51,7 +51,7 @@ const DualRangeSlider = ({ min, max, values, onChange, onCommit }) => {
         className="absolute w-full h-0 z-20 outline-none pointer-events-none 
                    [&::-webkit-slider-thumb]:pointer-events-auto [&::-webkit-slider-thumb]:w-4 [&::-webkit-slider-thumb]:h-4 [&::-webkit-slider-thumb]:rounded-full [&::-webkit-slider-thumb]:bg-white [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:cursor-pointer [&::-webkit-slider-thumb]:shadow-md"
       />
-      
+
       {/* 文字顯示 */}
       <div className="absolute top-0 left-0 text-xs text-white/70">{minVal}</div>
       <div className="absolute top-0 right-0 text-xs text-white/70">{maxVal}</div>
@@ -60,50 +60,51 @@ const DualRangeSlider = ({ min, max, values, onChange, onCommit }) => {
 };
 
 // === 2. 修改主 Toolbar 組件，接收 onRangeCommit ===
-export const GraphToolbar = ({ 
-  onZoomFit, 
-  yearRange,      
-  currentRange,   
-  onRangeChange, // 用於更新 UI
-  onRangeCommit  // [新增] 用於更新圖表
+export const GraphToolbar = ({
+  onZoomFit,
+  yearRange,
+  currentRange,
+  onRangeChange,
+  onRangeCommit
 }) => {
   const [isOpen, setIsOpen] = useState(false);
-  
-  // ...樣式定義保持不變...
-  const btnClass = "p-3 rounded-full backdrop-blur-md border transition-all shadow-xl flex items-center justify-center text-white active:scale-95 duration-300";
+
+  const btnClass = "p-3 rounded-full backdrop-blur-md border transition-all shadow-xl flex items-center justify-center text-white active:scale-95 duration-300 size-12";
   const inactiveClass = "bg-white/5 border-white/10 text-white/70 hover:bg-white/10 hover:text-white";
   const activeClass = "bg-[#457B9D] border-[#457B9D] shadow-[#457B9D]/30";
 
   return (
-    <div className="absolute top-24 right-5 z-30 flex flex-col gap-3 pointer-events-auto items-end">
+    <div className="absolute left-44 bottom-6 mb-2 p-2 gap-2 z-100 flex items-center h-16 bg-gray-800/50 rounded-full pointer-events-auto">
+
       <button onClick={onZoomFit} className={`${btnClass} ${inactiveClass}`} title="縮放至全圖">
         <Maximize size={20} />
       </button>
-      
-      <div className="flex items-center gap-3">
-        <div className={`transition-all duration-500 ease-in-out overflow-hidden ${isOpen ? 'w-64 opacity-100 mr-2' : 'w-0 opacity-0 mr-0'}`}>
-          <div className="bg-[#1e1e23]/90 backdrop-blur-md border border-white/10 p-4 rounded-xl shadow-2xl">
-            <div className="flex justify-between items-center mb-2">
-              <span className="text-white text-sm font-bold">時間篩選</span>
-              <span className="text-[#457B9D] text-xs font-mono">
-                {currentRange[0]} - {currentRange[1]}
-              </span>
-            </div>
-            
-            {/* 傳入新的 props */}
-            <DualRangeSlider 
-              min={yearRange[0]} 
-              max={yearRange[1]} 
+
+      <div className='flex gap-3 items-center'>
+        <button onClick={() => setIsOpen(!isOpen)} className={` ${btnClass} ${isOpen ? activeClass : inactiveClass}`} title="時間篩選">
+          {isOpen ? <X size={20} /> : <Filter size={20} />}
+        </button>
+
+        <div className={`transition-all duration-500 ease-in-out overflow-hidden ${isOpen ? 'w-64 opacity-100 mr-2' : 'w-0 opacity-0 mr-0'
+          }`}>
+          {/* 修正 3: 確保文字不會因為寬度變化而換行撐高高度 */}
+          <div className="flex justify-between items-center h-5">
+            <span className="text-white text-sm font-bold whitespace-nowrap">時間篩選</span>
+            <span className="text-[#457B9D] text-xs font-mono whitespace-nowrap">
+              {currentRange[0]} - {currentRange[1]}
+            </span>
+          </div>
+
+          <div className="h-10 flex items-center">
+            <DualRangeSlider
+              min={yearRange[0]}
+              max={yearRange[1]}
               values={currentRange}
-              onChange={onRangeChange} 
+              onChange={onRangeChange}
               onCommit={onRangeCommit}
             />
           </div>
         </div>
-
-        <button onClick={() => setIsOpen(!isOpen)} className={`${btnClass} ${isOpen ? activeClass : inactiveClass}`} title="時間篩選">
-          {isOpen ? <X size={20} /> : <Filter size={20} />}
-        </button>
       </div>
     </div>
   );

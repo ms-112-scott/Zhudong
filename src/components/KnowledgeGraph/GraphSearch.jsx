@@ -87,7 +87,7 @@ const GraphSearch = ({ nodes, links, onSelect }) => {
   };
 
   return (
-    <div ref={wrapperRef} className="absolute top-4 left-4 z-40 w-72">
+    <div ref={wrapperRef} className="absolute top-4 left-6 z-40 w-72">
       {/* 搜尋框 */}
       <div className="relative group">
         <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">

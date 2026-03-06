@@ -36,10 +36,12 @@ const InfoCard = ({ node, onClose, graphData, onNodeClick }) => {
     const target = graphData.nodes.find(n => n.id === id);
     if (target && onNodeClick) onNodeClick(target);
   };
+ 
+  
 
   return (
     <div
-      className={`fixed top-0 pt-20 right-0 h-full w-full md:w-120 bg-[#1e1e22] border-l border-white/5 shadow-2xl z-50 transform transition-transform duration-500 ease-in-out ${
+      className={`fixed top-0 pt-20 right-0 h-full w-full md:w-150 bg-[#1e1e22] border-l border-white/5 shadow-2xl z-50 transform transition-transform duration-500 ease-in-out ${
         isOpen ? 'translate-x-0' : 'translate-x-full'
       }`}
     >

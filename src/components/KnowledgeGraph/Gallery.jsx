@@ -1,30 +1,17 @@
 import React, { useEffect, useState } from 'react';
+import { useData } from '../../context/DataContext';
 
 export default function Gallery() {
-  const [images, setImages] = useState([]);
-  const [loading, setLoading] = useState(true);
+ const { images, loading } = useData(); // 直接取得全域資料
 
-  // 這是你專屬的 GitHub Raw URL
-  const githubJsonUrl = "https://raw.githubusercontent.com/ms-112-scott/Zhudong/master/src/data/images.json";
-
-  useEffect(() => {
-    fetch(githubJsonUrl)
-      .then(res => {
-        if (!res.ok) throw new Error("找不到 JSON 檔案，請確認 GitHub 是否已同步成功");
-        return res.json();
-      })
-      .then(data => {
-        setImages(data);
-        setLoading(false);
-      })
-      .catch(err => {
-        console.error("讀取失敗:", err);
-        setLoading(false);
-      });
-  }, []);
-
-  if (loading) return <div>同步資料中...</div>;
-  console.log(images);
+  if (loading) {
+    return (
+      <div className="min-h-screen flex flex-col items-center justify-center bg-slate-50">
+        <div className="w-12 h-12 border-4 border-blue-200 border-t-blue-600 rounded-full animate-spin"></div>
+        <p className="mt-4 text-slate-500 font-medium animate-pulse">正在載入歷史影像...</p>
+      </div>
+    );
+  }
   
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 p-4">
@@ -59,3 +46,4 @@ export default function Gallery() {
 </div>
   );
 }
+
