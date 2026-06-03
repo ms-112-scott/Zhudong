@@ -8,7 +8,8 @@ export const DataProvider = ({ children }) => {
   const GITHUB_JSON_URL = "https://raw.githubusercontent.com/ms-112-scott/Zhudong/master/src/data/images.json";
 
   useEffect(() => {
-    fetch(GITHUB_JSON_URL)
+    // cache-busting：加時間戳繞過 raw.githubusercontent CDN cache
+    fetch(`${GITHUB_JSON_URL}?t=${Date.now()}`)
       .then(res => res.ok ? res.json() : [])
       .then(data => {
         setImages(data);

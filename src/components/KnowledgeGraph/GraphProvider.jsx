@@ -16,7 +16,8 @@ export const GraphProvider = ({ children }) => {
 
       try {
         setIsLoading(true);
-        const response = await fetch(API_URL);
+        // cache-busting：加時間戳繞過 raw.githubusercontent CDN cache
+        const response = await fetch(`${API_URL}?t=${Date.now()}`);
         
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
