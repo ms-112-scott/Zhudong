@@ -1489,18 +1489,6 @@
       "col": "#F4A261"
     },
     {
-      "id": "詹德懋",
-      "group": "自動增加",
-      "sourceSheet": "link_人森事上",
-      "sourceRow": 117,
-      "info": "(自動生成的關聯節點)",
-      "start_year": null,
-      "end_year": null,
-      "lon": null,
-      "lat": null,
-      "col": "#777777"
-    },
-    {
       "id": "林德勝",
       "group": "核心人物",
       "sourceSheet": "link_人森事下",
@@ -5165,7 +5153,7 @@
       "group": "核心人物",
       "sourceSheet": "link_戰後林業基層官僚",
       "sourceRow": 45,
-      "info": "本文作者之一，任職於國立臺灣大學地理環境資源學系 。   ",
+      "info": "林業研究學者，任職於國立臺灣大學地理環境資源學系 。   ",
       "start_year": null,
       "end_year": null,
       "lon": null,
@@ -7625,7 +7613,7 @@
       "group": "核心人物",
       "sourceSheet": "link_近代環境治理",
       "sourceRow": 3,
-      "info": "本文作者之一，任職於國立臺灣大學地理環境資源學系，其博士論文為本文部分內容之改寫來源 。   ",
+      "info": "林業研究學者，任職於國立臺灣大學地理環境資源學系，其博士論文為本文部分內容之改寫來源 。   ",
       "start_year": null,
       "end_year": null,
       "lon": null,
@@ -9721,16 +9709,6 @@
       "lon": null,
       "lat": null,
       "col": "#4CC9F0"
-    },
-    {
-      "id": "楊婷玉",
-      "group": "核心人物",
-      "info": "NYCU 美女",
-      "start_year": null,
-      "end_year": null,
-      "lon": null,
-      "lat": null,
-      "col": "#E63946"
     },
     {
       "id": "竹東貯木場",
@@ -13823,14 +13801,6 @@
       "label": "李世基姑丈",
       "info": "爭取政府標案提供李世基工作機會",
       "color": "#457B9D"
-    },
-    {
-      "source": "彭春貴",
-      "target": "詹德懋",
-      "group": "權力/人際",
-      "label": "指導待人處事",
-      "info": "與彭春貴合力撰寫「竹東林場誌」",
-      "color": "#A8DADC"
     },
     {
       "source": "林德勝",
@@ -18165,7 +18135,7 @@
       "target": "國立臺灣大學地理環境資源學系",
       "group": "組織/社群",
       "label": "任職於",
-      "info": "洪廣冀為本文作者之一，任職於該學系。",
+      "info": "洪廣冀為林業研究學者，任職於該學系。",
       "color": "#2A9D8F"
     },
     {
@@ -18173,7 +18143,7 @@
       "target": "國立臺灣大學地理環境資源學系",
       "group": "組織/社群",
       "label": "任職於",
-      "info": "張家綸為本文作者之一，任職於該學系。",
+      "info": "張家綸為林業研究學者，任職於該學系。",
       "color": "#2A9D8F"
     },
     {
