@@ -14,6 +14,15 @@ const MediaSection = ({ node }) => {
     return images.filter((img) => String(img.node_id) === String(node.id));
   }, [images, node]);
 
+  // [DEBUG] 點擊節點時，印出對應到幾張 png 與檔名
+  useEffect(() => {
+    if (!node) return;
+    console.log(
+      `[MediaSection] node "${node.id}" → ${nodeImages.length} png`,
+      nodeImages.map((img) => img.file_name || img.title || img.img_id)
+    );
+  }, [node, nodeImages]);
+
   // 2. 自動捲動核心邏輯
   const animate = () => {
     if (scrollRef.current && scrollSpeed.current !== 0) {

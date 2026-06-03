@@ -404,3 +404,8 @@ function getLegendData(ss, sheetName) {
   }
   return list;
 }
+
+
+
+所以gs會push to github哪一個branch
+github page要設定在哪一的branch?
