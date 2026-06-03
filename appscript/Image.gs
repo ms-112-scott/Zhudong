@@ -34,7 +34,8 @@ const SYNC_CONFIG = {
 function onOpen() {
   SpreadsheetApp.getUi()
     .createMenu('圖片同步')
-    .addItem('推送 images.json 到 GitHub', 'runSyncImagesWithUI')
+    .addItem('01 讀取資料夾圖庫', 'runReadFolderLibraryWithUI')
+    .addItem('02 更新至網站資料庫', 'runSyncImagesWithUI')
     .addToUi();
 }
 
@@ -51,6 +52,119 @@ function runSyncImagesWithUI() {
     ss.toast('失敗', '圖片同步', 3);
     ui.alert('同步失敗', e.message, ui.ButtonSet.OK);
   }
+}
+
+// ===== 按鈕：讀取資料夾圖庫 =====
+function runReadFolderLibraryWithUI() {
+  const ss = SpreadsheetApp.getActiveSpreadsheet();
+  const ui = SpreadsheetApp.getUi();
+  try {
+    ss.toast('讀取中，請稍候…', '讀取資料夾圖庫', 30);
+    const result = readFolderLibrary();
+    ss.toast('完成', '讀取資料夾圖庫', 3);
+    ui.alert('讀取完成', result, ui.ButtonSet.OK);
+  } catch (e) {
+    ss.toast('失敗', '讀取資料夾圖庫', 3);
+    ui.alert('讀取失敗', e.message, ui.ButtonSet.OK);
+  }
+}
+
+/**
+ * 讀取資料夾圖庫：
+ *   1. 掃 IMAGE_FOLDER_ID 下每個第一層資料夾
+ *   2. 每個資料夾 → 一個分頁 IMAGE_{folder_name}（不存在則建立）
+ *   3. 蒐集該資料夾「直接層」檔名（不含子資料夾），去副檔名後填入 B 欄 file_name
+ *      - 該檔名已在分頁中 → 跳過（保留原本 A/C/D 欄）
+ *      - 分頁沒有的 → 新增列
+ *      - 分頁有 file_name 但資料夾已無此檔 → 刪除該列
+ *   每個資料夾（含巢狀各層）都各自對應一個分頁：
+ *     IMAGE_FOLDER_ID > subfolder1 > subfolder2
+ *     → 分頁 IMAGE_subfolder1、IMAGE_subfolder2
+ */
+function readFolderLibrary() {
+  const ss = SpreadsheetApp.getActiveSpreadsheet();
+  const root = DriveApp.getFolderById(SYNC_CONFIG.IMAGE_FOLDER_ID);
+
+  // 蒐集所有資料夾（含各巢狀層）
+  const allFolders = [];
+  collectFolders(root, allFolders);
+
+  const summary = [];
+  let folderCount = 0;
+  allFolders.forEach(folder => {
+    folderCount++;
+    const folderName = folder.getName();
+    const sheetName = 'IMAGE_' + folderName;
+
+    // 直接層檔名，去副檔名、去重
+    const rawNames = [];
+    const files = folder.getFiles();
+    while (files.hasNext()) rawNames.push(stripExt(files.next().getName()));
+    const seen = {};
+    const names = [];
+    rawNames.forEach(n => { if (!seen[n]) { seen[n] = true; names.push(n); } });
+    const folderSet = seen;
+
+    // 取得或建立分頁
+    let sheet = ss.getSheetByName(sheetName);
+    if (!sheet) {
+      sheet = ss.insertSheet(sheetName);
+      sheet.getRange(1, 1, 1, 4)
+        .setValues([['node_id', 'file_name', 'info', 'website_sync_info']])
+        .setFontWeight('bold').setBackground('#EFEFEF');
+      sheet.setFrozenRows(1);
+    }
+
+    // 既有列（從第 2 列起）
+    const lastRow = sheet.getLastRow();
+    const data = lastRow > 1 ? sheet.getRange(2, 1, lastRow - 1, 4).getValues() : [];
+
+    // 由下往上刪：file_name 非空且資料夾已無此檔
+    const existingSet = {};
+    let deleted = 0;
+    for (let i = data.length - 1; i >= 0; i--) {
+      const fn = data[i][1] ? data[i][1].toString().trim() : '';
+      if (fn === '') continue;                 // 空白 file_name 列保留
+      if (!folderSet[fn]) {
+        sheet.deleteRow(i + 2);
+        deleted++;
+      } else {
+        existingSet[fn] = true;
+      }
+    }
+
+    // 新增：資料夾有、分頁沒有的檔名
+    const toAdd = names.filter(n => !existingSet[n]);
+    if (toAdd.length > 0) {
+      const startRow = sheet.getLastRow() + 1;
+      const rows = toAdd.map(n => [n.split('-')[0], n, '', '']);
+      sheet.getRange(startRow, 1, rows.length, 4).setValues(rows);
+    }
+
+    summary.push(sheetName + '：+' + toAdd.length + ' / -' + deleted + '（共 ' + names.length + ' 檔）');
+  });
+
+  if (folderCount === 0) {
+    return '根資料夾下沒有任何子資料夾。';
+  }
+  return '處理 ' + folderCount + ' 個資料夾：\n' + summary.join('\n');
+}
+
+// ===== 遞迴蒐集所有資料夾（含各巢狀層，不含 root 自身；跳過 Archive 整個子樹）=====
+const SKIP_FOLDERS = { 'Archive': true };
+function collectFolders(folder, out) {
+  const subs = folder.getFolders();
+  while (subs.hasNext()) {
+    const sub = subs.next();
+    if (SKIP_FOLDERS[sub.getName()]) continue;   // Archive 不做分頁、不遞迴
+    out.push(sub);
+    collectFolders(sub, out);
+  }
+}
+
+// ===== 去副檔名（移除最後一個 .ext）=====
+function stripExt(name) {
+  return name.replace(/\.[^.\/]+$/, '');
 }
 
 // ===== 主程式 =====
