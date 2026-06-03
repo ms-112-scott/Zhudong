@@ -7,7 +7,7 @@ export const GraphProvider = ({ children }) => {
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  const API_URL = "https://script.google.com/macros/s/AKfycbxeqaBIYsX9o9W8T9Md4vv24X5iGhdke4kC2OOyIitj6wWO-1XAfPctV8cIgoyezxFy/exec";
+  const API_URL = "https://raw.githubusercontent.com/ms-112-scott/Zhudong/master/src/data/graph.json";
 
   useEffect(() => {
     const fetchData = async () => {
