@@ -542,7 +542,7 @@
     },
     {
       "id": "柳杉",
-      "group": "自然",
+      "group": "物/技術",
       "sourceSheet": "link_人森事上",
       "sourceRow": 43,
       "info": "台灣人工林經營研究的主力樹種",
@@ -550,7 +550,7 @@
       "end_year": null,
       "lon": null,
       "lat": null,
-      "col": "#9D4EDD"
+      "col": "#83C5BE"
     },
     {
       "id": "行政法規",
@@ -9094,13 +9094,13 @@
     },
     {
       "id": "紅檜",
-      "group": "自然",
+      "group": "物/技術",
       "info": "具高經濟價值的本土珍貴樹種研究",
       "start_year": null,
       "end_year": null,
       "lon": null,
       "lat": null,
-      "col": "#9D4EDD"
+      "col": "#83C5BE"
     },
     {
       "id": "扁柏",
@@ -9384,13 +9384,13 @@
     },
     {
       "id": "肖楠",
-      "group": "自然",
+      "group": "物/技術",
       "info": "森林生長模式研究中的常見對象",
       "start_year": null,
       "end_year": null,
       "lon": null,
       "lat": null,
-      "col": "#9D4EDD"
+      "col": "#83C5BE"
     },
     {
       "id": "烏心石",
