@@ -6134,15 +6134,15 @@
     },
     {
       "id": "森林研究委員會",
-      "group": "自動增加",
+      "group": "組織/社群",
       "sourceSheet": "link_森林經營研究發展趨勢",
       "sourceRow": 55,
-      "info": "(自動生成的關聯節點)",
-      "start_year": null,
-      "end_year": null,
+      "info": "資金來源為美國林務署的官方研究委員會，經NRC調查後被建議應採取更靈活的調適策略以順應全球需要 。    ",
+      "start_year": 1990,
+      "end_year": 1990,
       "lon": null,
       "lat": null,
-      "col": "#777777"
+      "col": "#4CC9F0"
     },
     {
       "id": "AGRICOLA",
@@ -9989,16 +9989,6 @@
       "lon": null,
       "lat": null,
       "col": "#83C5BE"
-    },
-    {
-      "id": "林業研究委員會",
-      "group": "組織/社群",
-      "info": "資金來源為美國林務署的官方研究委員會，經NRC調查後被建議應採取更靈活的調適策略以順應全球需要 。    ",
-      "start_year": 1990,
-      "end_year": 1990,
-      "lon": null,
-      "lat": null,
-      "col": "#4CC9F0"
     },
     {
       "id": "官有林野及樟腦製造取締規則",
