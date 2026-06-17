@@ -5486,27 +5486,27 @@
     },
     {
       "id": "森林施業系",
-      "group": "自動增加",
+      "group": "行政",
       "sourceSheet": "link_森林經營研究發展趨勢",
       "sourceRow": 8,
-      "info": "(自動生成的關聯節點)",
-      "start_year": null,
-      "end_year": null,
+      "info": "光復初期林業試驗所下設的六科之一，於1974年改稱為森林經營系 。    ",
+      "start_year": 1947,
+      "end_year": 1974,
       "lon": null,
       "lat": null,
-      "col": "#777777"
+      "col": "#CCCCCC"
     },
     {
       "id": "森林殖育系",
-      "group": "自動增加",
+      "group": "行政",
       "sourceSheet": "link_森林經營研究發展趨勢",
       "sourceRow": 9,
-      "info": "(自動生成的關聯節點)",
-      "start_year": null,
-      "end_year": null,
+      "info": "光復初期林業試驗所下設的六科之一，於1974年改稱為育林系 。    ",
+      "start_year": 1947,
+      "end_year": 1974,
       "lon": null,
       "lat": null,
-      "col": "#777777"
+      "col": "#CCCCCC"
     },
     {
       "id": "育林系",
@@ -5594,39 +5594,39 @@
     },
     {
       "id": "森林利用",
-      "group": "自動增加",
+      "group": "物/技術",
       "sourceSheet": "link_森林經營研究發展趨勢",
       "sourceRow": 16,
-      "info": "(自動生成的關聯節點)",
-      "start_year": null,
-      "end_year": null,
+      "info": "林業試驗所發表的八大研究主題之一，在1947至2000年間共發表396篇，佔論文總量的39.1% 。    ",
+      "start_year": 1947,
+      "end_year": 2000,
       "lon": null,
       "lat": null,
-      "col": "#777777"
+      "col": "#83C5BE"
     },
     {
       "id": "育林",
-      "group": "自動增加",
+      "group": "物/技術",
       "sourceSheet": "link_森林經營研究發展趨勢",
       "sourceRow": 17,
-      "info": "(自動生成的關聯節點)",
-      "start_year": null,
-      "end_year": null,
+      "info": "林業試驗所發表的八大研究主題之一，在1947至2000年間共發表237篇，佔論文總量的23.4% 。    ",
+      "start_year": 1947,
+      "end_year": 2000,
       "lon": null,
       "lat": null,
-      "col": "#777777"
+      "col": "#83C5BE"
     },
     {
       "id": "森林經營",
-      "group": "自動增加",
+      "group": "物/技術",
       "sourceSheet": "link_森林經營研究發展趨勢",
       "sourceRow": 18,
-      "info": "(自動生成的關聯節點)",
-      "start_year": null,
-      "end_year": null,
+      "info": "一門綜合林學知識的應用科學，亦為林業試驗所主要研究主題之一，在1947至2000年間共發表156篇 。    ",
+      "start_year": 1947,
+      "end_year": 2000,
       "lon": null,
       "lat": null,
-      "col": "#777777"
+      "col": "#83C5BE"
     },
     {
       "id": "森林經理",
@@ -5774,15 +5774,15 @@
     },
     {
       "id": "試驗林地",
-      "group": "自動增加",
+      "group": "地點",
       "sourceSheet": "link_森林經營研究發展趨勢",
       "sourceRow": 35,
-      "info": "(自動生成的關聯節點)",
-      "start_year": null,
-      "end_year": null,
+      "info": "林業試驗所轄下負責各項林業試驗研究的在地場所，傳統森林經理研究偏好在此進行實證調查 。    ",
+      "start_year": 1947,
+      "end_year": 2000,
       "lon": null,
       "lat": null,
-      "col": "#777777"
+      "col": "#2A9D8F"
     },
     {
       "id": "傳統森林經營核心",
@@ -5798,15 +5798,15 @@
     },
     {
       "id": "木材生產",
-      "group": "自動增加",
+      "group": "物/技術",
       "sourceSheet": "link_森林經營研究發展趨勢",
       "sourceRow": 36,
-      "info": "(自動生成的關聯節點)",
-      "start_year": null,
-      "end_year": null,
+      "info": "傳統森林經營的核心概念與取向之一，強調森林的經濟生產價值 。    ",
+      "start_year": 1947,
+      "end_year": 2000,
       "lon": null,
       "lat": null,
-      "col": "#777777"
+      "col": "#83C5BE"
     },
     {
       "id": "典範轉移",
@@ -5882,27 +5882,27 @@
     },
     {
       "id": "森林科學",
-      "group": "自動增加",
+      "group": "物/技術",
       "sourceSheet": "link_森林經營研究發展趨勢",
       "sourceRow": 41,
-      "info": "(自動生成的關聯節點)",
-      "start_year": null,
-      "end_year": null,
+      "info": "學科化與體制化源自兩百年前德國導師學校傳統的科學領域，近年面臨學科分化與轉型 。    ",
+      "start_year": 1805,
+      "end_year": 2000,
       "lon": null,
       "lat": null,
-      "col": "#777777"
+      "col": "#83C5BE"
     },
     {
       "id": "官僚體系",
-      "group": "自動增加",
+      "group": "組織/社群",
       "sourceSheet": "link_森林經營研究發展趨勢",
       "sourceRow": 42,
-      "info": "(自動生成的關聯節點)",
-      "start_year": null,
+      "info": "兩百年前德國傳統森林經營有目的服務的對象，以經濟觀點來建構森林相關知識 。    ",
+      "start_year": 1805,
       "end_year": null,
       "lon": null,
       "lat": null,
-      "col": "#777777"
+      "col": "#4CC9F0"
     },
     {
       "id": "掠奪式經營",
@@ -5918,15 +5918,15 @@
     },
     {
       "id": "自然資源耗竭",
-      "group": "自動增加",
+      "group": "事件",
       "sourceSheet": "link_森林經營研究發展趨勢",
       "sourceRow": 43,
-      "info": "(自動生成的關聯節點)",
-      "start_year": null,
+      "info": "掠奪式經營策略所引發的環境問題，促使森林經營走向新的生態與適應性經營典範 。    ",
+      "start_year": 1960,
       "end_year": null,
       "lon": null,
       "lat": null,
-      "col": "#777777"
+      "col": "#E9C46A"
     },
     {
       "id": "森林多目標經營",
@@ -5942,15 +5942,15 @@
     },
     {
       "id": "森林資源",
-      "group": "自動增加",
+      "group": "自然",
       "sourceSheet": "link_森林經營研究發展趨勢",
       "sourceRow": 44,
-      "info": "(自動生成的關聯節點)",
-      "start_year": null,
-      "end_year": null,
+      "info": "泛指包含林木、野生動物棲地及集水區等複雜多變的系統，近代經營企圖將其納入多元多目標考量 。    ",
+      "start_year": 1960,
+      "end_year": 2000,
       "lon": null,
       "lat": null,
-      "col": "#777777"
+      "col": "#9D4EDD"
     },
     {
       "id": "森林多資源經營",
@@ -6002,27 +6002,27 @@
     },
     {
       "id": "森林學術史料",
-      "group": "自動增加",
+      "group": "資料來源",
       "sourceSheet": "link_森林經營研究發展趨勢",
       "sourceRow": 49,
-      "info": "(自動生成的關聯節點)",
-      "start_year": null,
-      "end_year": null,
+      "info": "記錄森林學科發展過程的歷史文獻與出版品，近年受到重視並用以追蹤與反省學門發展趨勢 。    ",
+      "start_year": 1947,
+      "end_year": 2000,
       "lon": null,
       "lat": null,
-      "col": "#777777"
+      "col": "#A8DABB"
     },
     {
       "id": "英語",
-      "group": "自動增加",
+      "group": "物/技術",
       "sourceSheet": "link_森林經營研究發展趨勢",
       "sourceRow": 50,
-      "info": "(自動生成的關聯節點)",
-      "start_year": null,
-      "end_year": null,
+      "info": "國際森林學術領域世界通行的科學語言，佔SCI全部林業主題文獻的65.2%，具高度中心傾向 。    ",
+      "start_year": 1947,
+      "end_year": 2002,
       "lon": null,
       "lat": null,
-      "col": "#777777"
+      "col": "#83C5BE"
     },
     {
       "id": "科學資訊研究所",
@@ -6050,51 +6050,51 @@
     },
     {
       "id": "台灣學術界",
-      "group": "自動增加",
+      "group": "組織/社群",
       "sourceSheet": "link_森林經營研究發展趨勢",
       "sourceRow": 52,
-      "info": "(自動生成的關聯節點)",
-      "start_year": null,
-      "end_year": null,
+      "info": "引進並繼受國外成熟林業理論與技術創新的本土科學社群，在國際分工中常處於結構依賴邊陲 。    ",
+      "start_year": 1947,
+      "end_year": 2002,
       "lon": null,
       "lat": null,
-      "col": "#777777"
+      "col": "#4CC9F0"
     },
     {
       "id": "SCI",
-      "group": "自動增加",
+      "group": "資料來源",
       "sourceSheet": "link_森林經營研究發展趨勢",
       "sourceRow": 52,
-      "info": "(自動生成的關聯節點)",
-      "start_year": null,
-      "end_year": null,
+      "info": "科學資訊研究所（ISI）收錄的「科學引用文獻索引」，在台灣為國科會與大專院校評估研究成果與教員晉升之權威指標 。    ",
+      "start_year": 2002,
+      "end_year": 2002,
       "lon": null,
       "lat": null,
-      "col": "#777777"
+      "col": "#A8DABB"
     },
     {
       "id": "台灣林業研究",
-      "group": "自動增加",
+      "group": "物/技術",
       "sourceSheet": "link_森林經營研究發展趨勢",
       "sourceRow": 53,
-      "info": "(自動生成的關聯節點)",
-      "start_year": null,
-      "end_year": null,
+      "info": "包含林業試驗所、各大學演習林與地方試驗之研究工作，在本土引進近代科學林業已逾百年 。    ",
+      "start_year": 1900,
+      "end_year": 2000,
       "lon": null,
       "lat": null,
-      "col": "#777777"
+      "col": "#83C5BE"
     },
     {
       "id": "邊陲地位",
-      "group": "自動增加",
+      "group": "同儕/人際",
       "sourceSheet": "link_森林經營研究發展趨勢",
       "sourceRow": 53,
-      "info": "(自動生成的關聯節點)",
-      "start_year": null,
-      "end_year": null,
+      "info": "台灣學術氛圍因長期移植、加工西方學術傳統，在研究問題、理論及方法上因循既有基礎而呈現的結構依賴特質 。    ",
+      "start_year": 1947,
+      "end_year": 2002,
       "lon": null,
       "lat": null,
-      "col": "#777777"
+      "col": "#A8DADC"
     },
     {
       "id": "國家研究院",
@@ -6110,15 +6110,15 @@
     },
     {
       "id": "森林研究",
-      "group": "自動增加",
+      "group": "資料來源",
       "sourceSheet": "link_森林經營研究發展趨勢",
       "sourceRow": 54,
-      "info": "(自動生成的關聯節點)",
-      "start_year": null,
-      "end_year": null,
+      "info": "美國國家研究院（NRC）於1990年出版的後設研究報告書，專門分析林業研究委員會的研究表現與社會需求落差 。    ",
+      "start_year": 1990,
+      "end_year": 1990,
       "lon": null,
       "lat": null,
-      "col": "#777777"
+      "col": "#A8DABB"
     },
     {
       "id": "美國林務署",
@@ -6158,15 +6158,15 @@
     },
     {
       "id": "期刊論文",
-      "group": "自動增加",
+      "group": "資料來源",
       "sourceSheet": "link_森林經營研究發展趨勢",
       "sourceRow": 56,
-      "info": "(自動生成的關聯節點)",
-      "start_year": null,
-      "end_year": null,
+      "info": "科學知識的主要傳播工具與傳承媒介，其用語及體例常作為科學社群典範呈現的符碼 。    ",
+      "start_year": 1947,
+      "end_year": 2000,
       "lon": null,
       "lat": null,
-      "col": "#777777"
+      "col": "#A8DABB"
     },
     {
       "id": "CAB",
@@ -6194,39 +6194,39 @@
     },
     {
       "id": "人工林",
-      "group": "自動增加",
+      "group": "自然",
       "sourceSheet": "link_森林經營研究發展趨勢",
       "sourceRow": 60,
-      "info": "(自動生成的關聯節點)",
-      "start_year": null,
-      "end_year": null,
+      "info": "經由人工栽植與修整的人造森林類型，為林業試驗所傳統森林經理研究長期高度偏好的實證研究對象 。    ",
+      "start_year": 1947,
+      "end_year": 2000,
       "lon": null,
       "lat": null,
-      "col": "#777777"
+      "col": "#9D4EDD"
     },
     {
       "id": "森林保護",
-      "group": "自動增加",
+      "group": "物/技術",
       "sourceSheet": "link_森林經營研究發展趨勢",
       "sourceRow": 61,
-      "info": "(自動生成的關聯節點)",
-      "start_year": null,
-      "end_year": null,
+      "info": "林業試驗所發表的八大研究主題之一，主要為病蟲害與林火研究，1990年正式建制成立森林保護系 。    ",
+      "start_year": 1958,
+      "end_year": 2000,
       "lon": null,
       "lat": null,
-      "col": "#777777"
+      "col": "#83C5BE"
     },
     {
       "id": "集水區經營",
-      "group": "自動增加",
+      "group": "物/技術",
       "sourceSheet": "link_森林經營研究發展趨勢",
       "sourceRow": 62,
-      "info": "(自動生成的關聯節點)",
-      "start_year": null,
-      "end_year": null,
+      "info": "著重環境效益與水土保持的研究議題，1977年林業試驗所正式增設集水區經營系以提昇該研究產量 。    ",
+      "start_year": 1958,
+      "end_year": 2000,
       "lon": null,
       "lat": null,
-      "col": "#777777"
+      "col": "#83C5BE"
     },
     {
       "id": "竹類",
@@ -6242,27 +6242,27 @@
     },
     {
       "id": "環境效益",
-      "group": "自動增加",
+      "group": "自然",
       "sourceSheet": "link_森林經營研究發展趨勢",
       "sourceRow": 64,
-      "info": "(自動生成的關聯節點)",
-      "start_year": null,
-      "end_year": null,
+      "info": "包含森林水文學、非市場價值評估、對空氣品質與都會空間的影響等非傳統木材價值的森林整體效益 。    ",
+      "start_year": 1950,
+      "end_year": 2000,
       "lon": null,
       "lat": null,
-      "col": "#777777"
+      "col": "#9D4EDD"
     },
     {
       "id": "森林期刊",
-      "group": "自動增加",
+      "group": "資料來源",
       "sourceSheet": "link_森林經營研究發展趨勢",
       "sourceRow": 65,
-      "info": "(自動生成的關聯節點)",
-      "start_year": null,
-      "end_year": null,
+      "info": "指美國所出版之《Journal of Forestry》，晚近在議題選擇取向上加強了專業倫理、野地經營及多樣性等社會大眾關心的面向 。    ",
+      "start_year": 1996,
+      "end_year": 1996,
       "lon": null,
       "lat": null,
-      "col": "#777777"
+      "col": "#A8DABB"
     },
     {
       "id": "專業倫理",
@@ -6278,57 +6278,45 @@
     },
     {
       "id": "跨學科研究",
-      "group": "自動增加",
+      "group": "同儕/人際",
       "sourceSheet": "link_森林經營研究發展趨勢",
       "sourceRow": 66,
-      "info": "(自動生成的關聯節點)",
-      "start_year": null,
-      "end_year": null,
+      "info": "結合社會科學、生物科學等多元領域專家介入森林研究的現象，使得傳統森林科學社群對議題的決定權被分散 。    ",
+      "start_year": 1990,
+      "end_year": 2000,
       "lon": null,
       "lat": null,
-      "col": "#777777"
-    },
-    {
-      "id": "1947-2000",
-      "group": "自動增加",
-      "sourceSheet": "link_森林經營研究發展趨勢",
-      "sourceRow": 67,
-      "info": "(自動生成的關聯節點)",
-      "start_year": null,
-      "end_year": null,
-      "lon": null,
-      "lat": null,
-      "col": "#777777"
+      "col": "#A8DADC"
     },
     {
       "id": "研究人力流動",
-      "group": "自動增加",
+      "group": "同儕/人際",
       "sourceSheet": "link_森林經營研究發展趨勢",
-      "sourceRow": 68,
-      "info": "(自動生成的關聯節點)",
-      "start_year": null,
-      "end_year": null,
+      "sourceRow": 67,
+      "info": "指科學社群內研究人員的更迭與新進人力的加入，本研究證實提高其流動率有助於觀念的創新與擴散 。    ",
+      "start_year": 1947,
+      "end_year": 2000,
       "lon": null,
       "lat": null,
-      "col": "#777777"
+      "col": "#A8DADC"
     },
     {
       "id": "研究創新",
-      "group": "自動增加",
+      "group": "物/技術",
       "sourceSheet": "link_森林經營研究發展趨勢",
-      "sourceRow": 68,
-      "info": "(自動生成的關聯節點)",
-      "start_year": null,
-      "end_year": null,
+      "sourceRow": 67,
+      "info": "在學術發展過程中引進新理論、新議題（如資源經濟、地景規劃）或新量化技術的科學演進過程 。    ",
+      "start_year": 1947,
+      "end_year": 2000,
       "lon": null,
       "lat": null,
-      "col": "#777777"
+      "col": "#83C5BE"
     },
     {
       "id": "無形學院",
       "group": "組織/社群",
       "sourceSheet": "link_森林經營研究發展趨勢",
-      "sourceRow": 69,
+      "sourceRow": 68,
       "info": "透過論文交流形成的非正式科學社群",
       "start_year": null,
       "end_year": null,
@@ -6338,39 +6326,39 @@
     },
     {
       "id": "核心作者",
-      "group": "自動增加",
+      "group": "資料來源",
       "sourceSheet": "link_森林經營研究發展趨勢",
-      "sourceRow": 69,
-      "info": "(自動生成的關聯節點)",
-      "start_year": null,
-      "end_year": null,
+      "sourceRow": 68,
+      "info": "指在科學社群中少數彼此相連、具備高學術生產力的研究者，其研究取向與議題選擇足以主導整體學門的表現 。    ",
+      "start_year": 1947,
+      "end_year": 2000,
       "lon": null,
       "lat": null,
-      "col": "#777777"
+      "col": "#A8DABB"
     },
     {
       "id": "生態取向",
-      "group": "自動增加",
+      "group": "物/技術",
       "sourceSheet": "link_森林經營研究發展趨勢",
-      "sourceRow": 70,
-      "info": "(自動生成的關聯節點)",
-      "start_year": null,
-      "end_year": null,
+      "sourceRow": 69,
+      "info": "晚近十年間（1991-2000）逐漸融合傳統森林經營的新興研究取向，關注天然林組成與生態穩定等議題 。    ",
+      "start_year": 1991,
+      "end_year": 2000,
       "lon": null,
       "lat": null,
-      "col": "#777777"
+      "col": "#83C5BE"
     },
     {
       "id": "森林概論",
-      "group": "自動增加",
+      "group": "資料來源",
       "sourceSheet": "link_森林經營研究發展趨勢",
-      "sourceRow": 71,
-      "info": "(自動生成的關聯節點)",
-      "start_year": null,
-      "end_year": null,
+      "sourceRow": 70,
+      "info": "林業試驗所劃分的泛森林經營研究主題之一，包含林農經營現況意願調查、社會認知與歷史回顧，於1992年始見諸期刊 。    ",
+      "start_year": 1992,
+      "end_year": 2000,
       "lon": null,
       "lat": null,
-      "col": "#777777"
+      "col": "#A8DABB"
     },
     {
       "id": "1992年里約熱內盧的環境與發展會議",
@@ -10001,6 +9989,16 @@
       "lon": null,
       "lat": null,
       "col": "#83C5BE"
+    },
+    {
+      "id": "林業研究委員會",
+      "group": "組織/社群",
+      "info": "資金來源為美國林務署的官方研究委員會，經NRC調查後被建議應採取更靈活的調適策略以順應全球需要 。    ",
+      "start_year": 1990,
+      "end_year": 1990,
+      "lon": null,
+      "lat": null,
+      "col": "#4CC9F0"
     },
     {
       "id": "官有林野及樟腦製造取締規則",
@@ -17270,14 +17268,6 @@
       "group": "事件",
       "label": "學科演化",
       "info": "導致森林專業界限日益模糊",
-      "color": "#E63946"
-    },
-    {
-      "source": "林業試驗所",
-      "target": "1947-2000",
-      "group": "事件",
-      "label": "涵蓋時段",
-      "info": "本研究所追蹤的五十年變遷歷程",
       "color": "#E63946"
     },
     {
