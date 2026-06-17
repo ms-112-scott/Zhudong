@@ -1694,7 +1694,7 @@
     },
     {
       "id": "孟傳樓",
-      "group": "官員",
+      "group": "行政官員",
       "sourceSheet": "link_人森事下",
       "sourceRow": 18,
       "info": "金陵大學林學士，前林產管理委員會第一組副組長，後被唐振緒起用為林產管理局作業組長，參與業務清查。",
@@ -1702,7 +1702,7 @@
       "end_year": null,
       "lon": null,
       "lat": null,
-      "col": "#CCCCCC"
+      "col": "#457B9D"
     },
     {
       "id": "索道 (流籠)",
