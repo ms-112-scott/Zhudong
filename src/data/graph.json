@@ -4550,7 +4550,7 @@
     },
     {
       "id": "林產管理局",
-      "group": "行政",
+      "group": "組織/社群",
       "sourceSheet": "link_戰後林業基層官僚",
       "sourceRow": 2,
       "info": "隸屬農林處之三級機關，負責國有林野經營、造林與伐木等林產企業    ",
@@ -4558,7 +4558,7 @@
       "end_year": null,
       "lon": null,
       "lat": null,
-      "col": "#CCCCCC"
+      "col": "#4CC9F0"
     },
     {
       "id": "陳尚權",
@@ -7166,7 +7166,7 @@
     },
     {
       "id": "黃河水利工程委員會",
-      "group": "行政",
+      "group": "組織/社群",
       "sourceSheet": "link_保林重於造林",
       "sourceRow": 20,
       "info": "中國治理黃河之工程機關，唐振緒在赴美前與歸國後曾在此任職    ",
@@ -7174,7 +7174,7 @@
       "end_year": null,
       "lon": null,
       "lat": null,
-      "col": "#CCCCCC"
+      "col": "#4CC9F0"
     },
     {
       "id": "康乃爾大學",
@@ -8210,7 +8210,7 @@
     },
     {
       "id": "保安林",
-      "group": "行政",
+      "group": "自然",
       "sourceSheet": "link_近代環境治理",
       "sourceRow": 41,
       "info": "依據〈臺灣森林令〉由官方指定、事涉治山治水與水源涵養等公益功能、限制或禁止地貌變更與自由採伐的法定森林 。   ",
@@ -8218,7 +8218,7 @@
       "end_year": 1937,
       "lon": null,
       "lat": null,
-      "col": "#CCCCCC"
+      "col": "#9D4EDD"
     },
     {
       "id": "青年團",
