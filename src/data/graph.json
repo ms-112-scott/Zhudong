@@ -1442,15 +1442,15 @@
     },
     {
       "id": "竹東林業展示館",
-      "group": "自動增加",
+      "group": "地點",
       "sourceSheet": "link_人森事上",
       "sourceRow": 112,
-      "info": "(自動生成的關聯節點)",
+      "info": "植松址文化空間",
       "start_year": null,
       "end_year": null,
       "lon": null,
       "lat": null,
-      "col": "#777777"
+      "col": "#2A9D8F"
     },
     {
       "id": "口述訪談紀錄",
@@ -3434,7 +3434,7 @@
     },
     {
       "id": "楊駿憲",
-      "group": " 核心人物",
+      "group": "核心人物",
       "sourceSheet": "link_人森事下",
       "sourceRow": 180,
       "info": "曾任林務局造林組長，推動採購法制化，新竹竹東人。",
@@ -3442,7 +3442,7 @@
       "end_year": null,
       "lon": null,
       "lat": null,
-      "col": "#CCCCCC"
+      "col": "#E63946"
     },
     {
       "id": "竹東 (新竹)",
@@ -9621,16 +9621,6 @@
       "lon": null,
       "lat": null,
       "col": "#CCCCCC"
-    },
-    {
-      "id": "竹東林業展示館 ",
-      "group": "地點",
-      "info": "植松址文化空間",
-      "start_year": null,
-      "end_year": null,
-      "lon": null,
-      "lat": null,
-      "col": "#2A9D8F"
     },
     {
       "id": "你所不知道的人森事（上）",
