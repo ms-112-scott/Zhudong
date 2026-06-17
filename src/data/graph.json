@@ -122,7 +122,7 @@
     },
     {
       "id": "檜木",
-      "group": "自然",
+      "group": "物/技術",
       "sourceSheet": "link_人森事上",
       "sourceRow": 11,
       "info": "高經濟價值之主要砍伐對象",
@@ -130,7 +130,7 @@
       "end_year": null,
       "lon": null,
       "lat": null,
-      "col": "#9D4EDD"
+      "col": "#83C5BE"
     },
     {
       "id": "檜山工作站",
@@ -1190,7 +1190,7 @@
     },
     {
       "id": "臺灣赤楊",
-      "group": "自然",
+      "group": "物/技術",
       "sourceSheet": "link_人森事上",
       "sourceRow": 93,
       "info": "先驅樹種，常作為薪炭",
@@ -1198,7 +1198,7 @@
       "end_year": null,
       "lon": null,
       "lat": null,
-      "col": "#9D4EDD"
+      "col": "#83C5BE"
     },
     {
       "id": "森林復育計畫",
@@ -7022,7 +7022,7 @@
     },
     {
       "id": "沈家銘",
-      "group": "官員",
+      "group": "行政官員",
       "sourceSheet": "link_保林重於造林",
       "sourceRow": 12,
       "info": "戰後臺灣林業核心官員，時任太平山林場場長，1948年7月受命前往八仙山林場徹查闊葉林特許掩護檜木盜伐的重大弊案。",
@@ -7030,7 +7030,7 @@
       "end_year": 1982,
       "lon": null,
       "lat": null,
-      "col": "#CCCCCC"
+      "col": "#457B9D"
     },
     {
       "id": "李國鼎",
@@ -11015,7 +11015,7 @@
     {
       "id": "陳中鑑",
       "group": "民間業者",
-      "info": "建國實業公司負責人，涉及與前林務局長黃維炎之間的檜木配售詐欺及行政失職糾葛。",
+      "info": "核心人物",
       "start_year": null,
       "end_year": null,
       "lon": null,
