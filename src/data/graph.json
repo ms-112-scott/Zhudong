@@ -242,7 +242,7 @@
     },
     {
       "id": "林務局",
-      "group": "行政",
+      "group": "組織/社群",
       "sourceSheet": "link_人森事上",
       "sourceRow": 20,
       "info": "行政長官公署時期的省級三級機構，同時掌管林政與林產之一元化機關    ",
@@ -250,7 +250,7 @@
       "end_year": 1947,
       "lon": null,
       "lat": null,
-      "col": "#CCCCCC"
+      "col": "#4CC9F0"
     },
     {
       "id": "徐碧清",
@@ -4538,7 +4538,7 @@
     },
     {
       "id": "新竹山林管理所",
-      "group": "行政",
+      "group": "組織/社群",
       "sourceSheet": "link_戰後林業基層官僚",
       "sourceRow": 2,
       "info": "戰後成立的地方林政機構，管轄桃竹苗一帶面積達117,762公頃的國有林    ",
@@ -4546,7 +4546,7 @@
       "end_year": null,
       "lon": null,
       "lat": null,
-      "col": "#CCCCCC"
+      "col": "#4CC9F0"
     },
     {
       "id": "林產管理局",
@@ -11385,7 +11385,7 @@
     {
       "id": "中華林學會臺灣分會",
       "group": "組織/社群",
-      "info": "林產管理局與林業試驗所專家於1948年4月成立之臺灣林學專業社群    ",
+      "info": "組織/社群",
       "start_year": 1948,
       "end_year": null,
       "lon": null,
